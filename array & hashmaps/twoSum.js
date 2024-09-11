@@ -1,23 +1,25 @@
 function twoSum(nums,target){
-   const numObject = {};
+    const numSet = new Set();
+    for(let i =0;i<nums.length;i++){
+        const complement = target - nums[i];
 
-   for(let i =0; i<nums.length;i++){
-    const num = nums[i];
-    const complement = target - num;
+        if(numSet.has(complement)){
+            const complementIndex = nums.indexOf(complement);
 
-    if(numObject.hasOwnProperty(complement)){
-        return [numObject[complement],i]
+            return [complementIndex,i]
+        }
 
+        numSet.add(nums[i]);
     }
-    numObject[num] = i
-   }
-   return [];
-
 }
+
+const nums = [2,1,7,8];
+const target = 9;
+
 
 console.log(
 
-    twoSum([10,2,3,8,1],9)
+    twoSum(nums,target)
 );
 
 

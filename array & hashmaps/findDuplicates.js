@@ -1,4 +1,4 @@
-function conatinsDuplicate(nums){
+function containsDuplicate(nums){
    const uniqueSet = new Set();
    for(let num of nums){
       if(uniqueSet.has(num)){
@@ -6,14 +6,13 @@ function conatinsDuplicate(nums){
       }
       uniqueSet.add(num);
    }
-   return false;
+   return false
 }
+
+
 console.log(
-   conatinsDuplicate([1,2,3,4,1])
-   
+   containsDuplicate([1,2,3])
 );
-
-
 
 
 
