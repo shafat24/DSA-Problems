@@ -21,7 +21,7 @@ function topKElements(nums,k){
         }
     }
 
-    for(leti=bucket.length-1;i>=0;i++){
+    for(leti=bucket.length-1;i>=0;i--){
         if(bucket[i]) result.push(...bucket[i])
             if(result.length===k) break;
     }
