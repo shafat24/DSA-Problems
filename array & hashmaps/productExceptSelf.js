@@ -22,5 +22,5 @@ const productExceptSelf = function(nums){
 
 console.log(
 
-    productExceptSelf([1,2,3,4])
+    productExceptSelf([2,2,2,2])
 );

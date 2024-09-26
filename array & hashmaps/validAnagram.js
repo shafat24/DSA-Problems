@@ -1,14 +1,28 @@
-function isAnagram(s,t){
-    if(s.length !== t.length){
-        return false;
-    }
+// function isAnagram(s,t){
+//     if(s.length !== t.length){
+//         return false;
+//     }
 
-    const sortedS = s.split('').sort().join('');
-    const sortedT = t.split('').sort().join('');
+//     const sortedS = s.split('').sort().join('');
+//     const sortedT = t.split('').sort().join('');
 
-    return sortedS === sortedT;
-}
+//     return sortedS === sortedT;
+// }
 
-console.log(
-    isAnagram("anagrad","nagarad")
+
+
+function validAnagram(s,t){
+  if(s.length !== t.length){
+    return false
+  }
+
+  const sortedS = s.split('').sort().join('');
+  const sortedT = t.split('').sort().join('')
+
+  return sortedS === sortedT
+ }
+
+ console.log(
+    validAnagram("anagrad","nagarad")
 );
+

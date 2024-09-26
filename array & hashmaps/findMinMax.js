@@ -13,6 +13,12 @@ function findMinMax(arr){
     return[min,max];
 }
 
-let arr = [3,2,4,1];
 
-console.log(findMinMax(arr));
+
+let arr = [3,2,4,1];
+console.log(findMaxMin(arr));
+
+
+
+
+
